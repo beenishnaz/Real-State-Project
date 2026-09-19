@@ -1,0 +1,378 @@
+
+.about-page {
+    min-height: 100vh;
+    background: #f8fafc;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.about-hero {
+    min-height: 430px;
+    padding: 70px 8%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(15, 23, 42, 0.7),
+            rgba(15, 23, 42, 0.82)
+        ),
+        url("https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=1800&q=85")
+        center/cover no-repeat;
+
+    color: white;
+}
+
+.about-hero-content {
+    max-width: 850px;
+}
+
+.about-hero span,
+.about-content > span,
+.section-title span,
+.about-cta span {
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #38bdf8;
+}
+
+.about-hero h1 {
+    margin: 16px 0;
+    font-size: 52px;
+    line-height: 1.15;
+}
+
+.about-hero p {
+    max-width: 700px;
+    margin: auto;
+
+    color: #e2e8f0;
+
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+
+/* =========================
+   INTRO
+========================= */
+
+.about-intro {
+    max-width: 1200px;
+    margin: auto;
+    padding: 90px 8%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.about-image {
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(15, 23, 42, 0.12);
+}
+
+.about-image img {
+    width: 100%;
+    height: 430px;
+
+    display: block;
+    object-fit: cover;
+}
+
+.about-content h2 {
+    margin: 12px 0 20px;
+
+    font-size: 40px;
+    line-height: 1.2;
+
+    color: #0f172a;
+}
+
+.about-content p {
+    margin: 0 0 16px;
+
+    color: #64748b;
+
+    line-height: 1.8;
+}
+
+.about-btn {
+    display: inline-block;
+    margin-top: 15px;
+
+    padding: 13px 22px;
+
+    border-radius: 8px;
+
+    background: #0ea5e9;
+    color: white;
+
+    text-decoration: none;
+    font-weight: 700;
+
+    transition: 0.3s ease;
+}
+
+.about-btn:hover {
+    background: #0284c7;
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   STATS
+========================= */
+
+.about-stats {
+    padding: 65px 8%;
+
+    background: #0f172a;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.stat-card {
+    text-align: center;
+    color: white;
+}
+
+.stat-card h3 {
+    margin: 0 0 8px;
+
+    font-size: 38px;
+    color: #38bdf8;
+}
+
+.stat-card p {
+    margin: 0;
+    color: #cbd5e1;
+    font-size: 14px;
+}
+
+
+/* =========================
+   WHY US
+========================= */
+
+.why-us {
+    padding: 90px 8%;
+    background: white;
+}
+
+.section-title {
+    max-width: 700px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.section-title h2 {
+    margin: 13px 0;
+
+    font-size: 38px;
+    color: #0f172a;
+}
+
+.section-title p {
+    margin: 0;
+
+    color: #64748b;
+    line-height: 1.7;
+}
+
+.why-grid {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.why-card {
+    padding: 30px;
+
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+
+    background: #f8fafc;
+
+    transition: 0.3s ease;
+}
+
+.why-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 15px 35px rgba(15, 23, 42, 0.08);
+}
+
+.why-icon {
+    width: 58px;
+    height: 58px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 18px;
+
+    border-radius: 50%;
+
+    background: #e0f2fe;
+
+    font-size: 25px;
+}
+
+.why-card h3 {
+    margin: 0 0 10px;
+
+    color: #0f172a;
+    font-size: 21px;
+}
+
+.why-card p {
+    margin: 0;
+
+    color: #64748b;
+
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   CTA
+========================= */
+
+.about-cta {
+    margin: 20px 8% 80px;
+    padding: 45px 50px;
+
+    border-radius: 20px;
+
+    background: #0f172a;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.about-cta h2 {
+    margin: 12px 0 0;
+
+    font-size: 30px;
+}
+
+.about-cta a {
+    flex-shrink: 0;
+
+    padding: 13px 22px;
+
+    border-radius: 8px;
+
+    background: #0ea5e9;
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: 700;
+
+    transition: 0.3s ease;
+}
+
+.about-cta a:hover {
+    background: #0284c7;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .about-hero h1 {
+        font-size: 42px;
+    }
+
+    .about-intro {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .about-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .why-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-cta {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .about-hero {
+        min-height: 350px;
+        padding: 60px 5%;
+    }
+
+    .about-hero h1 {
+        font-size: 34px;
+    }
+
+    .about-hero p {
+        font-size: 15px;
+    }
+
+    .about-intro,
+    .why-us {
+        padding: 60px 5%;
+    }
+
+    .about-content h2,
+    .section-title h2 {
+        font-size: 30px;
+    }
+
+    .about-image img {
+        height: 300px;
+    }
+
+    .about-stats {
+        padding: 50px 5%;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .stat-card h3 {
+        font-size: 30px;
+    }
+
+    .about-cta {
+        margin: 10px 5% 60px;
+        padding: 30px 25px;
+    }
+
+    .about-cta h2 {
+        font-size: 25px;
+    }
+}

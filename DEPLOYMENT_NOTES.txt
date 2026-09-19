@@ -1,0 +1,31 @@
+REAL ESTATE PROJECT - SETUP AND DEPLOYMENT NOTES
+
+IMPORTANT
+- This project is prepared as a deployable codebase, but deployment cannot be completed without your own MongoDB connection, hosting accounts, and production environment variables.
+- Never share your real .env file or commit it to GitHub.
+
+LOCAL SETUP
+1. Backend: open a terminal in Backend and run `npm install` then `npm start`.
+2. Create Backend/.env based on Backend/.env.example:
+   PORT=5000
+   MONGO_URI=<your MongoDB connection string>
+   JWT_SECRET=<long random secret>
+   PLATFORM_OWNER_EMAIL=<the exact email you use for the platform owner account>
+3. Frontend: open a second terminal in frontend and run `npm install` then `npm start`.
+4. For local frontend config, create frontend/.env using frontend/.env.example and set REACT_APP_API_URL=http://localhost:5000.
+5. Create/login to the account whose email matches PLATFORM_OWNER_EMAIL to access the central owner inbox and platform overview. Do not make admin access depend on a public signup role.
+
+FEATURES
+- General Contact Us submissions are saved in MongoDB and visible through the central inbox for the configured platform owner.
+- Property contact buttons record a call/email inquiry against the property and open the visitor's phone/email application. They do not send email automatically and do not provide in-site chat.
+- Property owners can view inquiries associated with their own user ID.
+- Platform owner can view inquiry records, registered accounts, and property listings through the dashboard when authorized.
+
+PRODUCTION DEPLOYMENT
+- Deploy Backend to a Node.js host and set PORT, MONGO_URI, JWT_SECRET, PLATFORM_OWNER_EMAIL, and any CORS/origin settings required by your host.
+- Deploy the React frontend to a static hosting provider. Set REACT_APP_API_URL to the deployed backend URL before building.
+- Ensure uploaded files are stored on persistent storage or move images to a managed object-storage service. Ephemeral hosting filesystems may erase uploads during redeploys.
+- Configure CORS to allow only your production frontend origin.
+- Use HTTPS for frontend and backend.
+- Email delivery is not configured in this project; mailto opens the user's mail application. For automatic email notifications, configure a trusted email provider and keep credentials in server environment variables.
+- Test registration/login, add/update/delete property, image upload, Contact Us submission, owner inbox authorization, call/email inquiry logging, and each dashboard with separate accounts before presenting/deploying.
