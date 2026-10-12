@@ -21,24 +21,21 @@ function Footer() {
                         commercial properties with a simple and
                         trusted real estate experience.
                     </p>
+                    
+<div className="footer-socials">
+  <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+    Face
+  </a>
 
-                    <div className="footer-socials">
-                        
-<a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
-  Face
-</a>
+  <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+    Inst
+  </a>
 
-<a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
-  Inst
-</a>
+  <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+    Lin
+  </a>
+</div>
 
-<a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
-  Lin
-</a>
-
-                        
-                        
-                    </div>
 
                 </div>
 
