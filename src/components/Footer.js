@@ -23,9 +23,20 @@ function Footer() {
                     </p>
 
                     <div className="footer-socials">
-                        <a href="https://www.facebook.com/">F</a>
-<a href="https://www.instagram.com/">◎</a>
-<a href="https://www.linkedin.com/">in</a>
+                        
+<a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
+  Face
+</a>
+
+<a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
+  Inst
+</a>
+
+<a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
+  Lin
+</a>
+
+                        
                         
                     </div>
 
